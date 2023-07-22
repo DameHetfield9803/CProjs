@@ -2,7 +2,7 @@
 #include <math.h>
 
 double exp(double p){
-    double e = 2.71828182818281828;
+    const double e = 2.71828182818281828;
     double result = pow(e, p);
     return result;
 }
@@ -17,7 +17,7 @@ double log(double p){
 
 double loge(double x){
     x = printf("Please enter a number to log with base e > ");
-    double e = 2.71828182818281828;
+    const double e = 2.71828182818281828;
     if(x > 0){
         double result = log(x) / log(e);
         return result;
